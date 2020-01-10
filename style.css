@@ -3,28 +3,77 @@ body{
     padding: 0;
     background:#050210 ;
 }
-#one {
-    position: relative;
-    margin: 100px auto;
+.one {
+    position: absolute;
+    top: 30%;
+    left: 41%;
     padding: 0;
     background: #ffffff;
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
     background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
     animation: krug 1s linear infinite;
+    z-index: auto;
+    
 }
-
-#two{
-    position:absolute;
+#beef{
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    padding: 0;
     height: 200px;
     width: 200px;
     border-radius: 100px;
     background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
     filter: blur(100px);
-    
+}
+
+.two{
+    content: "";
+    margin:0 auto;
+    position:absolute;
+    top:20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 200px;
+    background:#050210;
+   
 }
 @keyframes krug {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
+    0%{
+        transform: rotate(0deg);
+        
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+.three{
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 100%;
+    background: #0f0630;
+    animation: krug2 1s linear infinite;
+    
+}
+
+
+@keyframes krug2{
+    0%{
+        transform: scale(0.1,0.1);
+        opacity: 40%;
+    }
+   
+    100%{
+        transform: scale(1,1);
+        opacity: 80%;
+    }
 }
