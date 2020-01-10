@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:#050210 ;
+}
+#one {
+    position: relative;
+    margin: 100px auto;
+    padding: 0;
+    background: #ffffff;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation: krug 1s linear infinite;
+}
+
+#two{
+    position:absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    filter: blur(100px);
+    
+}
+@keyframes krug {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
