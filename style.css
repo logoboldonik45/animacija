@@ -18,17 +18,17 @@ body{
     
 }
 .one::before {
+    content: '';
     position: absolute;
-    top: 30%;
-    left: 41%;
+    top: 0%;
+    left: 0%;
     padding: 0;
     background: #ffffff;
     height: 300px;
     width: 300px;
     border-radius: 200px;
     background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
-    animation: krug 1s linear infinite;
-    z-index: auto;
+    filter: blur(50px);
 }
 .two{
     content: "";
