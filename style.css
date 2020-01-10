@@ -17,18 +17,19 @@ body{
     z-index: auto;
     
 }
-#beef{
+.one::before {
     position: absolute;
-    top: 44%;
-    left: 44%;
+    top: 30%;
+    left: 41%;
     padding: 0;
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+    background: #ffffff;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
     background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
-    filter: blur(100px);
+    animation: krug 1s linear infinite;
+    z-index: auto;
 }
-
 .two{
     content: "";
     margin:0 auto;
@@ -60,20 +61,19 @@ body{
     right: 10px;
     bottom: 10px;
     border-radius: 100%;
-    background: #0f0630;
+    background: #09041d;
     animation: krug2 1s linear infinite;
     
 }
 
-
 @keyframes krug2{
     0%{
         transform: scale(0.1,0.1);
-        opacity: 40%;
+        filter: blur(5px);
     }
    
     100%{
         transform: scale(1,1);
-        opacity: 80%;
+        filter: blur(5px);
     }
 }
